@@ -41,7 +41,7 @@
             left: -150px;
             bottom: 20%;
             font-size: 10px;
-            animation: drive 55s linear infinite;
+            animation: drive-right 55s linear infinite;
         }
         .car {
             position: absolute;
@@ -63,7 +63,7 @@
             left: -150px;
             bottom: 30%;
             font-size: 80px;
-            animation: drive 4s linear infinite;
+            animation: drive-right 3s linear infinite;
         }
         
         @keyframes drive {
@@ -73,13 +73,15 @@
             100% {
                 right: 100%;
             }
-            0% {
+        }
+      @keyframes drive-right {
+         0% {
                 left: -150px;
             }
             100% {
                 left: 100%;
             }
-        }
+       }
     </style>
 </head>
 <body>
