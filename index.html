@@ -96,21 +96,7 @@
                 left: 100%;
             }
        }
-         function createCar(emoji, delay) {
-            setTimeout(() => {
-                const car = document.createElement('div');
-                car.className = 'car';
-                car.textContent = emoji;
-                document.body.appendChild(car);
-                
-                // アニメーション終了後に要素を削除
-                car.addEventListener('animationend', () => {
-                    car.remove();
-                });
-            }, delay);
-        }
-             
-        createCar('🚗', 2000);
+         
     </style>
 </head>
 <body>
